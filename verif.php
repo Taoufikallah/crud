@@ -11,7 +11,7 @@ if ($rs=$stmt->fetch()) {
 
 	//
 		session_start();
-		$_SESSION['droit'] = 
+		$_SESSION['droit'] = $rs;
 	//q
 	//echo "bonjour mr ".$log." votre mot de //passe est ".$passe." vous etes //autorisé";qq
 	header('location:afficher.php');
